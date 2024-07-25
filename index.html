@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>MusicWave</h1>
+        <nav>
+            <input type="text" id="buscador" placeholder="Buscar...">
+            <button id="buscarBtn">Buscar</button>
+        </nav>
+    </header>
+    <div id="mensaje"></div>
+    <div id="principal">
+        <section id="playlists">
+            <h2>Playlists</h2>
+            <div class="playlist" data-index="0">
+                <h3>Playlist 1</h3>
+            </div>
+            <div class="playlist" data-index="1">
+                <h3>Playlist 2</h3>
+            </div>
+        </section>
+        <section id="generos">
+            <h2>Géneros Musicales</h2>
+            <div class="genero">
+                <h3>Rock</h3>
+            </div>
+            <div class="genero">
+                <h3>Pop</h3>
+            </div>
+        </section>
+    </div>
+    <div id="reproductor" style="display: none;">
+        <div id="controles">               
+            <button id="botonAnterior">Anterior</button>
+            <button id="botonPlay">Play</button>
+            <button id="botonPausa">Pausa</button>
+            <button id="botonSiguiente">Siguiente</button>
+        </div>
+        <div id="progreso">
+            <input type="range" id="barraProgreso" value="0" max="100">
+        </div>
+    </div>
+    <audio id="temaReproduciendo">
+        <source src="ruta_de_archivo1.mp3" type="audio/mp3">
+    </audio>
+    <div id="infoTema"></div>
+</body>
+</html>
